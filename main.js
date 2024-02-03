@@ -4,7 +4,7 @@ const timeSeconds = document.getElementById("time-seconds");
 const timeMilliseconds = document.getElementById("time-milliseconds");
 const startButton = document.getElementById("start");
 const stopButton = document.getElementById("stop");
-const ressetButton = document.getElementById("resset");
+const resetButton = document.getElementById("resset");
 
 let startTime;
 let stopTime = 0;
@@ -27,7 +27,7 @@ function displayTime() {
 startButton.addEventListener("click", () => {
   startButton.disabled = true;
   stopButton.disabled = false;
-  ressetButton.disabled = false;
+  resetButton.disabled = true;
   startTime = Date.now();
   displayTime();
 });
@@ -35,7 +35,7 @@ startButton.addEventListener("click", () => {
 stopButton.addEventListener("click", function () {
   startButton.disabled = false;
   stopButton.disabled = true;
-  ressetButton.disabled = false;
+  resetButton.disabled = false;
   clearTimeout(timeoutID);
   stopTime += (Date.now() - startTime);
 });
@@ -43,7 +43,7 @@ stopButton.addEventListener("click", function () {
 ressetButton.addEventListener("click", function () {
   startButton.disabled = false;
   stopButton.disabled = true;
-  ressetButton.disabled = true;
+  resetButton.disabled = true;
   timeHours.textContent = "0"
   timeMinutes.textContent = "0"
   timeSeconds.textContent = "0"
