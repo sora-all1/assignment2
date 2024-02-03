@@ -1,0 +1,11 @@
+#time{
+  font-size: 30px;
+  padding-left: 20px;
+  padding-top: 8px;
+  padding-bottom: 30px;
+}
+
+#start,#stop,#resset{
+  padding: 5px; 
+  font-weight: 700;
+}
