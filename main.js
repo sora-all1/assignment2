@@ -4,7 +4,7 @@ const timeSeconds = document.getElementById("time-seconds");
 const timeMilliseconds = document.getElementById("time-milliseconds");
 const startButton = document.getElementById("start");
 const stopButton = document.getElementById("stop");
-const resetButton = document.getElementById("resset");
+const resetButton = document.getElementById("reset");
 
 let startTime;
 let stopTime = 0;
