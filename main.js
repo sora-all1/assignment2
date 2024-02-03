@@ -40,7 +40,7 @@ stopButton.addEventListener("click", function () {
   stopTime += (Date.now() - startTime);
 });
 
-ressetButton.addEventListener("click", function () {
+resetButton.addEventListener("click", function () {
   startButton.disabled = false;
   stopButton.disabled = true;
   resetButton.disabled = true;
